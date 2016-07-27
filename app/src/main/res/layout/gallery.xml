@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@mipmap/wallpaper"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topimage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="10dp">
+    <ImageView
+        android:id="@+id/galleryimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        />
+    </RelativeLayout>
+
+
+
+    <HorizontalScrollView
+    android:id="@+id/framecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/topimage_layout"
+    android:layout_above="@+id/savelayout"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/frame_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/frame"
+            android:clickable="true"
+            />
+        <ImageView
+            android:id="@+id/frame_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/frame2"
+            android:clickable="true"
+            />
+        <ImageView
+            android:id="@+id/frame_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/frame3"
+            android:clickable="true"
+            />
+        <ImageView
+            android:id="@+id/frame_image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/colorframe"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/savelayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/final_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/button_orange"
+            android:layout_margin="10dp"
+            android:text="@string/Save"
+            android:textColor="@color/white"
+            android:clickable="true"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

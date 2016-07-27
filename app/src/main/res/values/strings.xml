@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SharePOC</string>
+    <string name="Share">Share</string>
+    <string name="Choose">Choose</string>
+    <string name="Save">Save</string>
+    <string name="ChangeBg">Change Background</string>
+    <string name="Settings">Settings</string>
+</resources>
